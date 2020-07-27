@@ -1,5 +1,5 @@
 body{
-    background-image: url(imagenes/full.jpg);
+    background-image: url(/img/full.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -83,11 +83,11 @@ body{
     animation-iteration-count: infinite;
 }
 @keyframes foto{
-    0%{ background-image: url(imagenes/girasol.jpg); background-position: center;background-repeat: no-repeat;  background-size: contain;}
-    5%{ background-image: url(imagenes/girasol.jpg); background-position: center;background-repeat: no-repeat;  background-size: contain;}
-    25%{ background-image: url(imagenes/monaLisa.jpg); background-position: center;background-repeat: no-repeat;  background-size: contain;}
-    75%{background-image: url(imagenes/pareja.png); background-position: center;background-repeat: no-repeat;  background-size: contain;}
-    100%{background-image: url(imagenes/IMG_20200314_101522_520.jpg); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    0%{ background-image: url("/img/girasol.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    5%{ background-image: url("/img/girasol.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    25%{ background-image: url("/img/IMG_20200314_101522_520.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    75%{background-image: url("/img/pareja.png"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    100%{background-image: url("/img/IMG_20200314_101522_520.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
 }
 .globo{
     position: absolute;
