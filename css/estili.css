@@ -1,0 +1,238 @@
+body{
+    background-image: url(/imagenes/12.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#particles-js{
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.birth{
+    
+    width: 60%;
+    height: 50%;
+    margin-left: 380px;
+    margin-top: 50px;    
+}
+
+.principal{
+    display: flex;
+   flex-direction: column;
+   background-color:hsla(180, 60%, 70%, 0.1);
+    
+}
+.titulo{
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+    margin: 0px;
+    animation-name: feliz;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    width: fit-content;
+    position: relative;
+    margin-bottom: 130px;
+    left: 350px;
+}
+@keyframes feliz{
+    0%{left:350px ;}
+    100%{left: 800px;}
+    
+
+}
+.confeti{
+    position: absolute;
+    top: 140px;
+    left: 550px;
+}
+.imagen{
+    position: absolute;
+    top: 90px;
+    left: 600px;
+    animation-name: happy;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes happy{
+    100%{width: 300px;}
+}
+.nombre{
+    text-align: center;
+    font-size: 30px;
+
+}
+.linea{
+    display: flex;
+    justify-content: space-around;
+}
+/*div{
+    border: 1px solid red;
+}*/
+.foto{
+    width: 400px;
+    height: 400px;
+    animation-name: foto;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+@keyframes foto{
+    0%{ background-image: url("/imagenes/girasol.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    5%{ background-image: url("/imagenes/girasol.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    25%{ background-image: url("/imagenes/monaLisa.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    75%{background-image: url("/imagenes/pareja.png"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+    100%{background-image: url("/imagenes/IMG_20200314_101522_520.jpg"); background-position: center;background-repeat: no-repeat;  background-size: contain;}
+}
+.globo{
+    position: absolute;
+    top:50px;
+    animation-name: globo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes globo{
+    100%{top: 400px;}
+}
+
+.color{
+    background-color: hsla(180, 100%, 50%,0.1);
+    border-radius: 10px;
+    padding: 5px;
+}
+.ventana{
+    display: none;
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top:750px;
+    left: 300px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    color: white;
+    z-index: 2;
+}
+.flotantetitulo{
+    margin-left: 20px;
+}
+.textoflotante{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 90px;
+    font-size: 30px;
+    font-family: cursive;
+}
+.cumple{
+    margin-top: 150px;
+    font-family: cursive;
+    animation-name: titulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes titulo{
+    0%{ color: black;}
+    25%{color: hsl(60, 100%, 50%); text-shadow: 1px 2px 5px black,2px 4px 4px yellow;font-size: 30pz;}
+    50%{color: hsl(30, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow; font-size: 40px;}
+    75%{color: hsl(15, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;font-size: 50px;}
+    100%{color: hsl(0, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;font-size: 60px;}
+}
+@media screen and (max-width:600px){
+    .cumple{
+        margin-top: 10px;
+        font-family: cursive;
+        animation-name: titulo;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        font-size: 40px;
+        text-align: center;
+    }
+    @keyframes titulo{
+        0%{ color: black;}
+        25%{color: hsl(60, 100%, 50%); text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
+        50%{color: hsl(30, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow; }
+        75%{color: hsl(15, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
+        100%{color: hsl(0, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
+    }
+    .lineamovil{
+        display: flex;
+        
+        flex-direction: column;
+
+    }
+    .globo{
+        display: none;
+    }
+    .foto{
+        width: 390px;
+        height: 390px;
+    }
+    .ventana{
+        display: none;
+        position: absolute;
+        width: 390px;
+        height: 450px;
+        top:240px;
+        left: 10px;
+        background-color: hsla(0, 0%, 0%, 0.);
+        color: white;
+    }
+    .textoflotante{
+    
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: cursive;
+    }
+    .imagen{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: happy;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        width: 100px;
+    }
+    @keyframes happy{
+        100%{width: 150px;}
+    }
+    .titulo{
+        text-align: center;
+        font-size: 60px;
+        margin: 0px;
+        animation-name: feliz;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        width: fit-content;
+        position: relative;
+    }
+    @keyframes feliz{
+        0%{left:0px ;}
+        100%{left: 0px;}
+        
+    
+    }
+    .confeti{
+        position: absolute;
+        top: 550px;
+        left: 10px;
+    }
+    .birth{
+       
+        width: 80%;
+        height: 60%;
+        margin-left: 40px;
+        
+    }
+   
+}
