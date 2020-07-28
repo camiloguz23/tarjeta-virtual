@@ -12,6 +12,7 @@ body{
     top: 0;
     z-index: -1;
 }
+
 .birth{
     
     width: 60%;
@@ -266,7 +267,7 @@ body{
    
 }
 /*  //////////    PARA CELULAR HORIZONTAL   //////////   */
-@media screen and (orientation:landscape){
+@media screen and (orientation:landscape) and (max-width:750px){
     .cumple{
         margin-top: 10px;
         font-family: cursive;
