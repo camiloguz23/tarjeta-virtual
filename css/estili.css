@@ -168,6 +168,7 @@ body{
     75%{color: hsl(15, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;font-size: 50px;}
     100%{color: hsl(0, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;font-size: 60px;}
 }
+/* ///////////// PARA CELULAR ////////////   */
 @media screen and (max-width:600px){
     .cumple{
         margin-top: 10px;
@@ -191,6 +192,9 @@ body{
         
         flex-direction: column;
 
+    }
+    .color{
+        margin-right: 2px;
     }
     .globo{
         display: none;
@@ -261,6 +265,7 @@ body{
     }
    
 }
+/*  //////////    PARA CELULAR HORIZONTAL   //////////   */
 @media screen and (orientation:landscape){
     .cumple{
         margin-top: 10px;
@@ -285,6 +290,12 @@ body{
         flex-direction: column;
 
     }
+    .color{
+        margin-left: -180px;
+    }
+    .principal{
+        margin-left: 180px;
+    }
     
     .foto{
         width: 390px;
@@ -295,8 +306,8 @@ body{
         position: absolute;
         width: 390px;
         height: 450px;
-        top:240px;
-        left: 10px;
+        top:500px;
+        left: 180px;
         background-color: hsla(0, 0%, 0%, 0.);
         color: white;
     }
