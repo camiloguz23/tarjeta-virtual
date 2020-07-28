@@ -131,6 +131,7 @@ body{
     padding: 5px;
     border: 1px solid blue;
     box-shadow: 2px 2px 15px 1px black;
+    cursor: pointer;
 }
 .ventana{
     display: none;
@@ -142,6 +143,7 @@ body{
     background-color: hsla(0, 0%, 0%, 0.7);
     color: white;
     z-index: 2;
+    cursor: pointer;
 }
 .flotantetitulo{
     margin-left: 20px;
@@ -203,6 +205,7 @@ body{
     }
     .color{
         margin-right: 2px;
+        cursor: pointer;
     }
     .globo{
         display: none;
