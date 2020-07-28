@@ -128,6 +128,8 @@ body{
     background-color: hsla(180, 100%, 50%,0.1);
     border-radius: 10px;
     padding: 5px;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 15px 1px black;
 }
 .ventana{
     display: none;
@@ -258,4 +260,93 @@ body{
         
     }
    
+}
+@media screen and (orientation:landscape){
+    .cumple{
+        margin-top: 10px;
+        font-family: cursive;
+        animation-name: titulo;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        font-size: 40px;
+        text-align: center;
+    }
+    @keyframes titulo{
+        0%{ color: black;}
+        25%{color: hsl(60, 100%, 50%); text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
+        50%{color: hsl(30, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow; }
+        75%{color: hsl(15, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
+        100%{color: hsl(0, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
+    }
+    .lineamovil{
+        display: flex;
+        
+        flex-direction: column;
+
+    }
+    
+    .foto{
+        width: 390px;
+        height: 390px;
+    }
+    .ventana{
+        display: none;
+        position: absolute;
+        width: 390px;
+        height: 450px;
+        top:240px;
+        left: 10px;
+        background-color: hsla(0, 0%, 0%, 0.);
+        color: white;
+    }
+    .textoflotante{
+    
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: cursive;
+    }
+    .imagen{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: happy;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        width: 100px;
+    }
+    @keyframes happy{
+        100%{width: 150px;}
+    }
+    .titulo{
+        text-align: center;
+        font-size: 60px;
+        margin: 0 0 0 150px;
+        
+        
+        
+        
+    }
+    @keyframes feliz{
+        0%{left:0px ;}
+        100%{left: 0px;}
+        
+    
+    }
+    .confeti{
+        position: absolute;
+        top: 550px;
+        left: 10px;
+    }
+    .birth{
+       
+        width: 80%;
+        height: 60%;
+        margin-left: 40px;
+        
+    }
+
 }
