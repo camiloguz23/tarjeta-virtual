@@ -5,6 +5,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 #particles-js{
     width: 100%;
     height: 200%;
@@ -13,21 +14,21 @@ body{
     z-index: -1;
 }
 
-.birth{
-    
+.birth { 
     width: 60%;
     height: 50%;
     margin-left: 380px;
     margin-top: 50px;    
 }
 
-.principal{
+.principal {
     display: flex;
    flex-direction: column;
    background-color:hsla(180, 60%, 70%, 0.1);
     
 }
-.titulo{
+
+.titulo {
     text-align: center;
     font-size: 60px;
     font-family: cursive;
@@ -41,17 +42,18 @@ body{
     margin-bottom: 130px;
     left: 350px;
 }
-@keyframes feliz{
+
+@keyframes feliz {
     0%{left:350px ;}
     100%{left: 800px;}
-    
-
 }
+
 .confeti{
     position: absolute;
     top: 140px;
     left: 550px;
 }
+
 .imagen{
     position: absolute;
     top: 90px;
@@ -80,7 +82,7 @@ body{
     width: 400px;
     height: 400px;
     animation-name: foto;
-    animation-duration: 60s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 @keyframes foto{
@@ -190,6 +192,11 @@ body{
         75%{color: hsl(15, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
         100%{color: hsl(0, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
     }
+
+    .ocultar-img {
+        display:none;
+    }
+
     #particles-js{
         width: 100%;
         height: 250%;
@@ -278,7 +285,7 @@ body{
 }
 /*  //////////    PARA CELULAR HORIZONTAL   //////////   */
 @media screen and (orientation:landscape) and (max-width:750px){
-    .cumple{
+    .cumple {
         margin-top: 10px;
         font-family: cursive;
         animation-name: titulo;
@@ -295,6 +302,11 @@ body{
         75%{color: hsl(15, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
         100%{color: hsl(0, 100%, 50%);text-shadow: 1px 2px 5px black,2px 4px 4px yellow;}
     }
+
+    .ocultar-img {
+        display:none;
+    }
+    
     #particles-js{
         width: 100%;
         height: 420%;
